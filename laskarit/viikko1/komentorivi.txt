@@ -1,0 +1,5 @@
+Folder PATH listing for volume OS
+Volume serial number is 58B9-5C6A
+C:\USERS\SEBAS\OT-HARJOITUSTYO
+└───laskarit
+    └───viikko1
