@@ -8,7 +8,7 @@
 	Peliruutu "*" --> "1" Toiminto
 	Kortti "1" --> "1" Toiminto
 	Pelaaja "1" --> "1" Pelinappula
-	Sattuma-yhteismaa "1" --> "1" Kortti	
+	Sattuma_yhteismaa "1" --> "1" Kortti	
 
 	Peliruutu : +Peliruutu seuraava
 	Peliruutu : +String tuomio
@@ -17,8 +17,8 @@
 
 	Peliruutu <|-- Aloitusruutu
 	Peliruutu <|-- Vankila
-	Peliruutu <|--  Sattuma-yhteismaa
-	Peliruutu <|-- Asema-laitos
+	Peliruutu <|--  Sattuma_yhteismaa
+	Peliruutu <|-- Asema_laitos
 	Peliruutu <|-- Normaali
 
 	Sattuma/yhteismaa : +Kortti kortti
