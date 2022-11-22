@@ -7,3 +7,5 @@ Tämä on **README**-tiedosto. Sinne kannattaa kirjoittaa ~~mitä tahtansa~~ ***
 
 
 [työaikakirjanpito](https://github.com/sebastian-lehto/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
+[vaativuusmäärittely](https://github.com/sebastian-lehto/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittelu.md)
