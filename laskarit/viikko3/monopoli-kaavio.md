@@ -21,7 +21,7 @@
 	Peliruutu <|-- Asema_laitos
 	Peliruutu <|-- Normaali
 
-	Sattuma/yhteismaa : +Kortti kortti
+	Sattuma_yhteismaa : +Kortti kortti
 	Normaali : +Pelaaja omistaja
 	Pelaaja : +int rahaa
 	
