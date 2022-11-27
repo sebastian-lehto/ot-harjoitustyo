@@ -10,6 +10,10 @@ class TestBall(unittest.TestCase):
 
     def test_starting_xspeed_correct(self):
         self.assertEqual(self.ball.XSpeed, 10)
+
+    def test_starting_xspeed_correct_after_bounce(self):
+        self.ball.bounce()
+        self.assertEqual(self.ball.XSpeed, -10)
     
     def test_starting_yspeed_correct(self):
         self.assertEqual(self.ball.YSpeed, 10)
