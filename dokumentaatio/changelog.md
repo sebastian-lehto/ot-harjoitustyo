@@ -1,4 +1,5 @@
 ## Viikko 3
 
-Ball luokan toimintaa voi testata
-Invoke-tehtävät lisätty
+Ball luokan toimintaa voi testata.
+Invoke-tehtävät lisätty.
+Pylint lisätty.
