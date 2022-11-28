@@ -2,18 +2,18 @@
 
 class Ball:
     def __init__(self):
-        self.X = 500
-        self.Y = 250
+        self.x = 500 # pylint: disable=invalid-name
+        self.y = 250 # pylint: disable=invalid-name
 
-        self.XSpeed = 10
-        self.YSpeed = 10
+        self.x_speed = 10
+        self.y_speed = 10
 
     def move(self):
-        self.X = self.X + self.XSpeed
-        self.Y = self.Y + self.YSpeed
+        self.x = self.x + self.x_speed
+        self.y = self.y + self.y_speed
 
     def bounce(self):
-        self.XSpeed = self.XSpeed * -1
+        self.x_speed = self.x_speed * -1
 
     def __str__(self):
-        return str(self.X) + "-" + str(self.Y)
+        return str(self.x) + "-" + str(self.y)
