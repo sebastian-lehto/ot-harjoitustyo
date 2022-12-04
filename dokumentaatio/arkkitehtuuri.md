@@ -1,13 +1,13 @@
 ```mermaid
  classDiagram
       Ball "1" --> "1" Game
-      class {
+      class Ball {
           x
           y
           x_speed
           y_speed
       }
-      class Game{
+      class Game {
           p1score
           p2score
           ball
