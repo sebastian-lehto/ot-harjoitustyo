@@ -1,5 +1,3 @@
-Tämä on **README**-tiedosto. Sinne kannattaa kirjoittaa ~~mitä tahtansa~~ ***jotakin hyödyllistä tietoa***.
-
 [gitlog.txt](https://github.com/sebastian-lehto/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
 
@@ -22,13 +20,7 @@ Tämä on **README**-tiedosto. Sinne kannattaa kirjoittaa ~~mitä tahtansa~~ ***
 poetry install
 ```
 
-2. Suorita vaadittavat alustustoimenpiteet komennolla:
-
-```bash
-poetry run invoke build
-```
-
-3. Käynnistä sovellus komennolla:
+2. Käynnistä sovellus komennolla:
 
 ```bash
 poetry run invoke start
