@@ -7,6 +7,10 @@ class TestBall(unittest.TestCase):
 
     def test_ball_starting_position_correct(self):
         self.assertEqual(str(self.ball), "500-250")
+    
+    def test_ball_position_correct_after_move(self):
+        self.ball.move()
+        self.assertEqual(str(self.ball), "510-260")
 
     def test_starting_xspeed_correct(self):
         self.assertEqual(self.ball.x_speed, 10)
