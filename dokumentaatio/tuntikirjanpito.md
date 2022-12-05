@@ -6,3 +6,5 @@
 | 22.11. | 1    | toiminnallisuuden aloitus ja ensimmäiset testit |
 | 27.11. | 4    | invoke-tehtävät ja lisäys testeihin |
 | 28.11. | 1    | pylint otettu käyttöön |
+| 5.12. | 5    | testejä korjattu, toiminnallisuutta lisätty, invoke start tuo näytön näkyviin |
+| yht. | 12    ||
