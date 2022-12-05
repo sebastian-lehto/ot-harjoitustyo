@@ -6,6 +6,8 @@
 
 [arkkitehtuuri](https://github.com/sebastian-lehto/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+[release viikko 5](https://github.com/sebastian-lehto/ot-harjoitustyo/releases/tag/viikko5)
+
 --
 
 ## Asennus
