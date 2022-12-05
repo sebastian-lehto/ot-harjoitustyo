@@ -10,6 +10,8 @@
       class Game {
           p1score
           p2score
+          p1y
+          p2y
           ball
           is_over
       }
