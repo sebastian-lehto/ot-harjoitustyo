@@ -10,6 +10,8 @@
 
 [changelog](https://github.com/sebastian-lehto/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 
+[arkkitehtuuri](https://github.com/sebastian-lehto/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
 --
 
 ## Asennus
