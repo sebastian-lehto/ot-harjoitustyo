@@ -13,6 +13,22 @@ class Game:
 
     def tick(self):
         self.ball.move()
+        if self.ball.y >= 490 or self.ball.y <= 10:
+            self.ball.flip_y()
+        if self.ball.x >= 890 and self.ball.x <= 900:
+            if self.ball.y >= self.p2y and self.ball.y <= self.p2y + 80 and self.ball.x_speed > 0:
+                self.ball.flip_x()
+        elif self.ball.x <= 130 and self.ball.x >= 110:
+            if self.ball.y >= self.p1y and self.ball.y <= self.p1y + 80 and self.ball.x_speed < 0:
+                self.ball.flip_x()
+        
+        if self.ball.x <= 0:
+            self.p2score += 1
+            self.reset()
+        elif self.ball.x >= 1000:
+            self.p1score += 1
+            self.reset()
+        
         self.p1y = self.p1y + self.p1y_speed
         self.p2y = self.p2y + self.p2y_speed
 

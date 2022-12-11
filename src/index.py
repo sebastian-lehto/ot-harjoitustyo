@@ -17,7 +17,25 @@ def main():
 
     while not game.is_over:
         ## did player quit
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                game.is_over = True
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_w:
+                    game.p1y_speed = -10
+                elif event.key == pygame.K_s:
+                    game.p1y_speed = 10
+                elif event.key == pygame.K_UP:
+                    game.p2y_speed = -10
+                elif event.key == pygame.K_DOWN:
+                    game.p2y_speed = 10
+            elif event.type == pygame.KEYUP:
+                if event.key == pygame.K_w or event.key == pygame.K_s:
+                    game.p1y_speed = 0
+                elif event.key == pygame.K_UP or event.key == pygame.K_DOWN:
+                    game.p2y_speed = 0
 
+        
         #move game forward
         game.tick()
 
@@ -32,8 +50,6 @@ def main():
         pygame.draw.rect(screen, GREEN, (900, game.p2y, 20, 80))
 
         pygame.display.update()
-        if game.ball.x > 1000:
-            game.is_over = True
 
         clock.tick(30)
 
