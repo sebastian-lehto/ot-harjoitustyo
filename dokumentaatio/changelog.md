@@ -15,3 +15,7 @@ Peli käynnistyy nyt, mutta pallo ei kimpoa, eikä pelaaja voi liikkua.
 
 ## Viikko 6
 Pallo kimpoaa ja mailat liikkuvat
+
+## Viikko 7
+Toimiva versio pelistä, jossa pisteet lasketaan ja peli loppuu
+Pylint korjailuja
