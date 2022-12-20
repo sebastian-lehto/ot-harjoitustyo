@@ -29,7 +29,7 @@ sequenceDiagram
   Game->>Ball: move()
   Game->>Ball: flip_y()
   Game->>Ball: flip_x()
-  Game->>Ball: reset()
+  Game->>Game: reset()
 ```
 
 Pelin käynnistyessä suoritetaan Index-luokan main-metodi alustaa tarvittavat muuttujat, ja aloittaa while-silmukan suorituksen,
