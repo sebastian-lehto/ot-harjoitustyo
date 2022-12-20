@@ -9,4 +9,5 @@
 | 5.12.  | 5    | testejä korjattu, toiminnallisuutta lisätty, invoke start tuo näytön näkyviin |
 | 11.12. | 1    | pallo kimpoaa ja mailat liikkuvat |
 | 18.12. | 3    | toimiva versio pelistä, pylint korjailuja |
-| yht. | 16    ||
+| 20.12. | 4    | paranneltu versio, arkkitehtuuri.md ja mäyttoohje.md päivitetty |
+| yht. | 20    ||
