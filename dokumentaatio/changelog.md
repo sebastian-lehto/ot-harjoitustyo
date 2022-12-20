@@ -17,5 +17,7 @@ Peli käynnistyy nyt, mutta pallo ei kimpoa, eikä pelaaja voi liikkua.
 Pallo kimpoaa ja mailat liikkuvat
 
 ## Viikko 7
-Toimiva versio pelistä, jossa pisteet lasketaan ja peli loppuu
-Pylint korjailuja
+Toimiva versio pelistä, jossa pisteet lasketaan ja peli loppuu.
+Pylint korjailuja.
+Arkkitehtuuri.md on päivitetty.
+
