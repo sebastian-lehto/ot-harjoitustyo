@@ -10,4 +10,5 @@
 | 11.12. | 1    | pallo kimpoaa ja mailat liikkuvat |
 | 18.12. | 3    | toimiva versio pelistä, pylint korjailuja |
 | 20.12. | 4    | paranneltu versio, arkkitehtuuri.md ja mäyttoohje.md päivitetty |
+| 23.12. | 5    | viimeisiä korjailuja koodissa ja dokumentaatiossa, sekä uusi release |
 | yht. | 20    ||
