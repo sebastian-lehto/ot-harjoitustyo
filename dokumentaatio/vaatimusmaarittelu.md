@@ -8,7 +8,7 @@
   Pelillä on vain yksi käyttäjärooli eli normaali käyttäjä. 
   Käyttäjiä on kuitenkin ihanteellisessa tilanteessa kaksi, sillä peli on tarkoitettu pelattavaksi kahdestaan.
 
-## Käyttöliittymäluonnos
+## Käyttöliittymäesimerkki
 ![](./pong_näkymä_ex.png)
 
 ## Toiminnallisuus
