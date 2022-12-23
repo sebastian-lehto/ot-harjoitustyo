@@ -34,7 +34,7 @@ class Ball:
         Kääntää pallon suunnan x-akselilla.
         """
         self.x_speed = self.x_speed * -1.1
-    
+
     def flip_y(self):
         """
         Kääntää pallon suunnan x-akselilla.
@@ -42,7 +42,8 @@ class Ball:
         self.y_speed = self.y_speed * -1
 
     def __str__(self):
-        """Muodostaa pallosta merkkijonomuotoisen esityksen.
+        """
+        Muodostaa pallosta merkkijonomuotoisen esityksen.
 
         Returns:
             Merkkijono, joka kertoo pallon x- ja y-koordinaatit.

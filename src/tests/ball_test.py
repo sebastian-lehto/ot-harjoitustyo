@@ -1,5 +1,5 @@
 import unittest
-from ball import Ball
+from entities.ball import Ball
 
 class TestBall(unittest.TestCase):
     def setUp(self):

@@ -1,4 +1,4 @@
-from ball import Ball
+from entities.ball import Ball
 
 class Game:
     """
@@ -30,20 +30,19 @@ class Game:
 
     def tick(self):
         """
-        Luokan keskeisin metodi, joka liikuttaa peliä eteenpäin. Metodi tarkastaa osuuko pallo johonkin,
+        Luokan keskeisin metodi, joka liikuttaa peliä eteenpäin.
+        Metodi tarkastaa osuuko pallo johonkin,
         onko pallo pelialueen ulkopuolella (maali), tai onko peli loppunut.
         """
         self.ball.move()
         if self.ball.y >= (self.dimensions[1] - 10) or self.ball.y <= 10:
             self.ball.flip_y()
-        if self.ball.x + self.ball.x_speed >= self.dimensions[0] - 100 >= self.ball.x:
-            if self.ball.y >= self.p2y - 10 and self.ball.y <= self.p2y + 80 and self.ball.x_speed > 0:
-                self.ball.y_speed = -8 * (((self.p2y + 80) - (self.ball.y) - 45) / 45)
-                self.ball.flip_x()
-        elif self.ball.x  + self.ball.x_speed <= 120 <= self.ball.x:
-            if self.ball.y >= self.p1y - 10 and self.ball.y <= self.p1y + 80 and self.ball.x_speed < 0:
-                self.ball.y_speed = -8 * (((self.p1y + 80) - (self.ball.y) - 45) / 45)
-                self.ball.flip_x()
+        if self.ball_hit_player() == 2:
+            self.ball.y_speed = -8 * (((self.p2y + 80) - (self.ball.y) - 45) / 45)
+            self.ball.flip_x()
+        elif self.ball_hit_player() == 1:
+            self.ball.y_speed = -8 * (((self.p1y + 80) - (self.ball.y) - 45) / 45)
+            self.ball.flip_x()
 
         if self.ball.x <= 0:
             self.scores[1] += 1
@@ -52,11 +51,30 @@ class Game:
             self.scores[0] += 1
             self.reset()
 
-        self.p1y = self.p1y if not -6  <= self.p1y + self.p1y_speed <= self.dimensions[1] - 80 else self.p1y + self.p1y_speed
-        self.p2y = self.p2y if not -6  <= self.p2y + self.p2y_speed <= self.dimensions[1] - 80 else self.p2y + self.p2y_speed
+        if 0  <= self.p1y + self.p1y_speed <= self.dimensions[1] - 80:
+            self.p1y += self.p1y_speed
+        if 0  <= self.p2y + self.p2y_speed <= self.dimensions[1] - 80:
+            self.p2y += self.p2y_speed
 
         if self.scores[0] >= 10 or self.scores[1] >= 10:
             self.is_over = True
+
+    def ball_hit_player(self):
+        """
+        Metodi kertoo, osuiko pallo jomman kumman pelaajan mailaan.
+
+        Returns:
+            Kokonaisluku, joka kertoo kumman pelaajan mailaan pallo osui.
+            Jos pallo ei osunut mailaan palautetaan 0.
+        """
+
+        if self.ball.x + self.ball.x_speed >= self.dimensions[0] - 100 >= self.ball.x:
+            if self.p2y - 10 <= self.ball.y <= self.p2y + 80 and self.ball.x_speed > 0:
+                return 2
+        elif self.ball.x  + self.ball.x_speed <= 120 <= self.ball.x:
+            if self.p1y - 10 <= self.ball.y <= self.p1y + 80 and self.ball.x_speed < 0:
+                return 1
+        return 0
 
     def reset(self):
         """
