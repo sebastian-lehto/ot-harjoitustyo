@@ -9,7 +9,7 @@
   Käyttäjiä on kuitenkin ihanteellisessa tilanteessa kaksi, sillä peli on tarkoitettu pelattavaksi kahdestaan.
 
 ## Käyttöliittymäluonnos
-![](./kayttoliittyma-hahmotelma.png)
+![](./pong_näkymä_ex.png)
 
 ## Toiminnallisuus
   Peli näyttää tavalliselta PONG-peliltä. 
