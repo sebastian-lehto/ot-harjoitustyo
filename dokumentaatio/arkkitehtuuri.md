@@ -1,3 +1,7 @@
+## Rakenne
+![](./rakenne_ot-harj.png)
+Pakkaus ui sisältää käyttöjärjestelmästä vastaavan luokan, kun taas pakkaus entities sisältää sovelluksen tietokohteina käytettyjä luokkia.
+
 ## Sovelluslogiikka
 ```mermaid
  classDiagram
@@ -48,5 +52,3 @@ jossa kutsutaan jatkuvasti Game-olion tick-metodia ja pelin osat piirretään ru
 Pallon osuessa "kattoon" tai "lattiaan" kutsutaan pallon flip_y-metodia, pallon osuesssa mailaan taas kutsutaan flip_x-metodia.
 Kun toinen pelaajista tekee maalin, kutsutaan Game-olion reset-metodia.
 
-## Rakenne
-Projektin yksinkertaisuuden vuoksi näin selkeämmäksi jättää kaikki oleelliset luokat src-hakemistoon, sillä luokkia on vain kolme.
