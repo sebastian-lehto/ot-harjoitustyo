@@ -1,4 +1,4 @@
-## Luokkakaavio
+## Sovelluslogiikka
 ```mermaid
  classDiagram
       Ball "1" --> "1" Game
@@ -24,6 +24,10 @@ Pelin tilasta vastaa Game-luokan olio, joka sisältää pelin oleelliset tietod 
 Tämän lisäksi oliolla on tick-metodi, joka liikuttaa peliä eteenpäin, tarvittaessa vaihtaen pallon suuntaa, ja reset-metodi, 
 jonka avulla peli alustetaan uudelleen maalin jälkeen.
 
+## Tietojen pysyväistallennus
+
+Minkään tiedon tallentaminen pysyvästi ei ole tarpeellista Pongin toiminnan kannalta, joten pysyväistallennusta ei ole.
+
 ## Pelin etenemisen sekvenssikaavio
 ```mermaid
 sequenceDiagram
@@ -45,7 +49,4 @@ Pallon osuessa "kattoon" tai "lattiaan" kutsutaan pallon flip_y-metodia, pallon 
 Kun toinen pelaajista tekee maalin, kutsutaan Game-olion reset-metodia.
 
 ## Rakenne
-Oleellisten hakemistojen rakenne, kuten sovellus kokonaisuudessaan, on erittäin yksinkertainen.
-
-src
---> test
+Projektin yksinkertaisuuden vuoksi näin selkeämmäksi jättää kaikki oleelliset luokat src-hakemistoon, sillä luokkia on vain kolme.
